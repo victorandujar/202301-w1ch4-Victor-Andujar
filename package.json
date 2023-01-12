@@ -1,0 +1,25 @@
+{
+  "name": "202301-w1ch4-victor-andujar",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "prebuild:dev": "rimraf dist",
+    "prebuild": "rimraf dist",
+    "build:dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorandujar/202301-w1ch4-Victor-Andujar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victorandujar/202301-w1ch4-Victor-Andujar/issues"
+  },
+  "homepage": "https://github.com/victorandujar/202301-w1ch4-Victor-Andujar#readme",
+  "devDependencies": {
+    "parcel": "^2.8.2",
+    "rimraf": "^3.0.2"
+  }
+}
