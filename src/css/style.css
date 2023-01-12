@@ -5,6 +5,19 @@
   --color-main: #ed6536;
   --typography-main: "Nunito", sans-serif;
   --block-padding-horizontal: 70px;
-  --block-padding-horizontal: 130px;
-  --button-border-radius: 0 20px 40px 60px;
+  --block-padding-vertical: 130px;
+  --button-border-radius: 0 30px 30px 30px;
+  --images-border-radius: 10px;
+}
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--typography-main);
 }
