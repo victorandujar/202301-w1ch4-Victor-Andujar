@@ -24,13 +24,17 @@ body {
 }
 
 .main-content__title {
+  display: flex;
+  justify-content: center;
   color: var(--color-main);
   font-size: 15px;
 }
 
 .subheader {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  font-size: 22px;
 }
 
 .subheader__button {
@@ -40,4 +44,17 @@ body {
   border-radius: var(--button-border-radius);
   width: 107px;
   height: 45px;
+}
+
+.main-photos {
+  display: flex;
+  flex-direction: column;
+  gap: 2;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.main-photos__photo {
+  border-radius: 15px;
+  margin-top: 10px;
 }
