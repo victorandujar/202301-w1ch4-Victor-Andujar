@@ -44,6 +44,16 @@ body {
   border-radius: var(--button-border-radius);
   width: 107px;
   height: 45px;
+  cursor: pointer;
+}
+
+.subheader__button:active {
+  color: #000;
+}
+
+.subheader__button:hoover {
+  background: none;
+  color: var(--color-main);
 }
 
 .main-photos {
@@ -57,4 +67,19 @@ body {
 .main-photos__photo {
   border-radius: 15px;
   margin-top: 10px;
+}
+
+@media (min-width: 990px) {
+  .main-photos {
+    flex-direction: row;
+  }
+
+  .main-content__title {
+    justify-content: flex-start;
+  }
+
+  .subheader {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
