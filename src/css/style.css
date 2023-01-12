@@ -14,12 +14,22 @@
 :before,
 :after {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
   font-family: var(--typography-main);
+}
+
+.head {
+  display: flex;
+  margin: 0;
+  box-shadow: 0 4px 9px 1px gray;
+}
+
+.main-content {
   padding: var(--block-padding-vertical) var(--block-padding-horizontal);
 }
 
@@ -27,14 +37,14 @@ body {
   display: flex;
   justify-content: center;
   color: var(--color-main);
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .subheader {
   display: flex;
   align-items: center;
   flex-direction: column;
-  font-size: 22px;
+  font-size: 35px;
 }
 
 .subheader__button {
@@ -47,13 +57,14 @@ body {
   cursor: pointer;
 }
 
-.subheader__button:active {
-  color: #000;
+.subheader__button:hover {
+  background-color: transparent;
+  color: var(--color-main);
+  border: 1px solid var(--color-main);
 }
 
-.subheader__button:hoover {
-  background: none;
-  color: var(--color-main);
+.subheader__button:active {
+  color: #000;
 }
 
 .main-photos {
@@ -67,11 +78,13 @@ body {
 .main-photos__photo {
   border-radius: 15px;
   margin-top: 10px;
+  object-fit: cover;
 }
 
 @media (min-width: 990px) {
   .main-photos {
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .main-content__title {
